@@ -3,6 +3,15 @@ function takeANumber(line, name){
     return (`Welcome, ${name}. You are number ${line.length} in line.`)
 }
 
+let line = []
+let number = 0
+
+function takeANumber(line) {
+  line.push(number)
+  number++
+return `You are ${number}.`
+}
+
 function nowServing(katzDeliLine) {
   if (katzDeliLine.length > 0){ 
     return (`Currently serving ` + katzDeliLine.shift() + `.`)}
